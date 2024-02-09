@@ -2,6 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "strict": true,
+    "strictPropertyInitialization": false,
     "outDir": "./dist/out-tsc",
     "module": "es2022",
     "sourceMap": true,
@@ -27,6 +28,7 @@
     "node_modules"
   ],
   "angularCompilerOptions": {
+    "strictPropertyInitialization": false,
     "strictTemplates": true,
     "fullTemplateTypeCheck": true,
     "annotateForClosureCompiler": true,
