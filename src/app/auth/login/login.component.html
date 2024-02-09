@@ -1,0 +1,34 @@
+`<div class="container-fluid h-100">
+  <div class="row d-flex justify-content-center align-items-center h-100">
+    <div class="col-6">
+      <form [formGroup]="form">
+        <nb-card>
+          <nb-card-header>Login</nb-card-header>
+          <nb-card-body>
+
+            <div class="form-row">
+
+              <div class="form-group col-12">
+                <label for="email" class="label">E-Mail:</label>
+                <input type="text" formControlName="email" id="email" nbInput fullWidth status="basic" placeholder="Default">
+              </div>
+              <div class="form-group col-12">
+                <label for="password" class="label">Senha:</label>
+                <input type="password" formControlName="password" id="password" nbInput fullWidth status="basic" placeholder="Default">
+              </div>
+
+              <div class="form-check mb-3 col-12">
+                <nb-checkbox formControlName="remember" status="basic">Permanecer logado</nb-checkbox>
+              </div>
+
+              <button nbButton fullWidth status="success" class="mb-5">Login</button>
+              <button nbButton fullWidth status="warning" outline>Esqueci a senha</button>
+
+            </div>
+          </nb-card-body>
+          <nb-card-footer>By Wikipedia</nb-card-footer>
+        </nb-card>
+      </form>
+    </div>
+  </div>
+</div>
