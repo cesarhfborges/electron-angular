@@ -1,6 +1,5 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {PageNotFoundComponent} from './shared/components';
 import {BasicLayoutComponent, FullLayoutComponent} from "./shared/layouts";
 
 const routes: Routes = [
@@ -21,8 +20,13 @@ const routes: Routes = [
   },
   {
     path: '**',
-    component: PageNotFoundComponent
-  }
+    redirectTo: 'not-found',
+    // component: PageNotFoundComponent
+  },
+  // {
+  //   path: 'not-found',
+  //   component: PageNotFoundComponent
+  // }
 ];
 
 @NgModule({

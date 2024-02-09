@@ -3,7 +3,6 @@ import {CommonModule} from '@angular/common';
 import {RouterOutlet} from "@angular/router";
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {TranslateModule} from '@ngx-translate/core';
-import {PageNotFoundComponent} from './components/';
 import {WebviewDirective} from './directives/';
 import {BasicLayoutComponent, FullLayoutComponent} from "./layouts";
 import {FooterComponent, HeaderComponent} from "./layouts/components";
@@ -50,7 +49,6 @@ const NB_MODULES: any[] = [
 ];
 
 const COMPONENTS: any[] = [
-  PageNotFoundComponent,
   FullLayoutComponent,
   BasicLayoutComponent,
   HeaderComponent,
